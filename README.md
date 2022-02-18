@@ -1,5 +1,7 @@
 # vueprojectm
 
+## 采用Vue ui向导构建 less，vue3，去掉lesint
+
 ## Project setup
 ```
 npm install
