@@ -1,4 +1,4 @@
-import axios, { noTimeoutHandlerAxios } from "../axios";
+import axios, { noTimeoutHandlerAxios } from "./axios";
 
 const baseUrl = "/v1";
 
