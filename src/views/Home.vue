@@ -11,6 +11,7 @@
 // @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
 import digquantServer from "../api/digquantServer";
+import riceQuantServer from "../api/riceQuantServer";
 import * as CryptoJS from "crypto-js";
 
 export default {
@@ -25,8 +26,12 @@ export default {
     };
   },
   mounted() {
-    this.GetTrainingCampVideoPlayUrl();
-    this.GetCourseVideoPlayUrl();
+    // this.GetTrainingCampVideoPlayUrl();
+    // this.GetCourseVideoPlayUrl();
+
+    // digquantServer.TestGetTrainingCampVideoPlayUrl();
+    // digquantServer.TestGetCourseVideoPlayUrl();
+    // digquantServer.TestRiceQuant();
   },
   methods: {
     Encrypt(data, key) {
