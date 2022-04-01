@@ -4,6 +4,7 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/> -->
 
     <!-- <iframe :src="openVideo"></iframe> -->
+    <Survey></Survey>
   </div>
 </template>
 
@@ -12,6 +13,7 @@
 import HelloWorld from "@/components/HelloWorld.vue";
 import digquantServer from "../api/digquantServer";
 import riceQuantServer from "../api/riceQuantServer";
+import Survey from "erl_packages_lib";
 import * as CryptoJS from "crypto-js";
 
 export default {
@@ -26,7 +28,7 @@ export default {
     };
   },
   mounted() {
-    // this.GetTrainingCampVideoPlayUrl();
+    this.GetTrainingCampVideoPlayUrl();
     // this.GetCourseVideoPlayUrl();
 
     // digquantServer.TestGetTrainingCampVideoPlayUrl();
@@ -44,8 +46,8 @@ export default {
     //获取特训营课程播放地址
     GetTrainingCampVideoPlayUrl() {
       let param = {
-        campPeriodId: 9,
-        subCourseId: 110,
+        campPeriodId: 1,
+        subCourseId: 36,
       };
       let jsonParam = JSON.stringify(param);
       console.log(jsonParam);

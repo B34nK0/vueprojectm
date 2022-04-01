@@ -3,7 +3,8 @@ import axios from "axios";
 import * as CryptoJS from "crypto-js";
 
 const instance = axios.create({
-    baseURL: "https://online2.digquant.com",
+    // baseURL: "https://online2.digquant.com",
+    baseURL: "http://alpha.digquant.com:18889",
     timeout: 3000,
 });
 
